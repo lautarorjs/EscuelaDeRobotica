@@ -1,0 +1,21 @@
+footer{
+    background-color: #377771;
+    div{
+        text-align: center;
+        p{
+            font-size: 155%;
+            font-weight: 400;
+            font-style: italic;
+            padding-top: 5px;
+            width: 90vw;
+            margin: 0 auto;
+            padding-bottom: 35px;
+        }
+    }
+    .logos{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding: 30px 25px;
+    }
+}

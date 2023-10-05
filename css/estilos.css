@@ -1,0 +1,588 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.sobrenos .formulario .questions {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace !important; }
+  * h1, * h2, * h3, * h4, * h5 {
+    margin-bottom: 0rem;
+    color: #000000 !important; }
+    * h1 a, * h2 a, * h3 a, * h4 a, * h5 a {
+      text-decoration: none;
+      color: #000000 !important; }
+      * h1 a:hover, * h2 a:hover, * h3 a:hover, * h4 a:hover, * h5 a:hover {
+        color: #ffffff; }
+    * h1 ul, * h2 ul, * h3 ul, * h4 ul, * h5 ul {
+      list-style: none; }
+
+header {
+  position: sticky;
+  top: 0px; }
+  header .navbar {
+    background-color: #377771 !important;
+    font-size: 25px;
+    z-index: 1000; }
+    header .navbar div .logo {
+      font-size: 40px; }
+
+.presentacion {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  background: #377771;
+  background: linear-gradient(180deg, #377771 0%, rgba(0, 0, 0, 0.697) 60%);
+  position: relative; }
+  .presentacion div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%; }
+    .presentacion div h1 {
+      font-size: 48px;
+      font-weight: 400; }
+    .presentacion div h3 {
+      width: 90%;
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center; }
+      .presentacion div h3 span {
+        top: 30px;
+        /* Ajusta la posición vertical */
+        left: 50%;
+        /* Centra horizontalmente */
+        transform: translateX(-50%);
+        /* Centra horizontalmente */
+        animation: naranja 3.5s infinite;
+        /* Agrega una animación llamada "bounce" */ }
+
+@keyframes naranja {
+  0% {
+    background-color: initial;
+    /* Estado inicial (sin cambio de color) */ }
+  50% {
+    background-color: #CF5C36;
+    /* Cambia a rojo a la mitad de la animación */ }
+  100% {
+    background-color: initial;
+    /* Vuelve al estado inicial */ } }
+  .presentacion h4 {
+    height: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    color: white !important;
+    text-shadow: #CF5C36 1px 1px 1px;
+    background: linear-gradient(90deg, black, #CF5C36, black); }
+
+.hero {
+  background-color: #000;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center; }
+  .hero .conteiner {
+    width: 70%;
+    position: relative;
+    padding-bottom: 160px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hero .conteiner h3 {
+      width: 100%;
+      color: white !important;
+      font-size: 60px;
+      width: 80vw !important; }
+      .hero .conteiner h3 .conteiner-animation {
+        background: #CF5C36;
+        position: relative; }
+        .hero .conteiner h3 .conteiner-animation::after {
+          content: "";
+          border-left: 4px solid white;
+          background: black;
+          right: -38px;
+          width: 80%;
+          height: 105%;
+          bottom: 0px;
+          position: absolute;
+          animation: maquinaescribir 2.5s infinite alternate steps(12); }
+
+@keyframes maquinaescribir {
+  from {
+    width: 100%; }
+  to {
+    width: 4.8%; } }
+
+.formaciones {
+  z-index: -1;
+  position: relative;
+  background: #377771;
+  background: linear-gradient(180deg, black 0%, #377771 95%); }
+  .formaciones h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+    text-shadow: #CF5C36 1px 1px 1px;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    color: white !important; }
+
+.imgRobotica {
+  position: relative;
+  z-index: -1; }
+  .imgRobotica div {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px; }
+    .imgRobotica div h5 {
+      text-align: center;
+      font-size: 60px;
+      color: white !important;
+      margin: auto;
+      text-shadow: 5px 5px 4px black !important; }
+    .imgRobotica div p {
+      font-size: 26px;
+      text-align: center;
+      color: white !important;
+      text-shadow: 5px 5px 1px black !important; }
+
+.contenido {
+  z-index: -1;
+  position: relative;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenido #comienzo {
+    color: white !important;
+    padding-top: 45px;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #CF5C36;
+    width: 80%;
+    text-align: center !important; }
+    .contenido #comienzo span {
+      color: #CF5C36;
+      font-size: 35px; }
+  .contenido .conocimientos {
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenido .conocimientos h4 {
+      width: 80vw;
+      font-size: 60px;
+      text-align: center;
+      color: white !important;
+      background: linear-gradient(90deg, black, #CF5C36, black); }
+    .contenido .conocimientos .programa {
+      position: relative;
+      margin-top: 45px;
+      width: 80vw; }
+      .contenido .conocimientos .programa ul {
+        margin-top: 63px;
+        padding-left: 0rem !important; }
+        .contenido .conocimientos .programa ul h5 {
+          text-align: center;
+          margin-top: 3px;
+          color: white !important;
+          text-shadow: 2px 2px 1px #CF5C36; }
+        .contenido .conocimientos .programa ul p {
+          text-align: center;
+          margin-top: 3px;
+          color: white; }
+
+.edades {
+  height: auto;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .edades h2 {
+    color: white !important;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    width: 80vw; }
+  .edades h3 {
+    color: white !important;
+    text-align: center;
+    font-size: 34px;
+    padding-top: 40px;
+    text-shadow: 1px 1px 1px #CF5C36;
+    width: 80vw; }
+    .edades h3 span {
+      color: #CF5C36;
+      font-size: 40px;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.619); }
+  .edades h4 {
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+    text-shadow: 1px 1px 1px #CF5C36;
+    width: 80vw; }
+
+.grupos {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .grupos h2 {
+    color: white !important;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    width: 80vw; }
+  .grupos h4 {
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80vw; }
+    .grupos h4 span {
+      text-decoration: underline;
+      color: #57cec2; }
+  .grupos h5 {
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 1px #CF5C36;
+    width: 80vw; }
+
+.costos {
+  text-align: center;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .costos .precio h2 {
+    color: white !important;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    width: 80vw; }
+  .costos .precio h3 {
+    color: white !important;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    width: 80vw; }
+    .costos .precio h3 span {
+      font-size: 55px;
+      color: #CF5C36; }
+  .costos .precio h4 {
+    color: white !important;
+    padding-top: 20px;
+    width: 80vw; }
+    .costos .precio h4 span {
+      font-size: 30px;
+      color: #CF5C36; }
+  .costos h5 {
+    color: white !important;
+    padding-top: 60px;
+    width: 80vw; }
+    .costos h5 span {
+      font-size: 25px;
+      color: #CF5C36; }
+  .costos h6 {
+    color: white !important;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    width: 80vw; }
+
+.ubi {
+  margin: 0 auto;
+  text-align: center;
+  background: black;
+  width: 100vw; }
+  .ubi h2 {
+    color: white !important;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    font-size: 50px;
+    margin-bottom: 40px; }
+  .ubi iframe {
+    padding-bottom: 30px; }
+
+/******************                   Sobre Nosotros                   *******************/
+.mision {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #377771;
+  background: linear-gradient(180deg, #377771 0%, black 100%); }
+  .mision .mis {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px; }
+    .mision .mis h1 {
+      font-size: 60px;
+      margin-bottom: 20px; }
+      .mision .mis h1:hover {
+        font-size: 90px !important; }
+    .mision .mis div {
+      width: 75%; }
+      .mision .mis div p {
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.876);
+        text-shadow: 0.5px 1px 1px rgba(255, 255, 255, 0.188);
+        font-weight: 500;
+        text-align: center;
+        font-style: italic; }
+        .mision .mis div p span {
+          position: relative; }
+          .mision .mis div p span::after {
+            background-color: #cf5c36ec;
+            content: "";
+            width: 100%;
+            height: 75%;
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            z-index: -1; }
+
+.alumnos {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  position: relative;
+  z-index: -1;
+  padding-bottom: 30px;
+  text-align: center; }
+  .alumnos p {
+    font-size: 50px;
+    text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.67);
+    width: 80vw;
+    margin: 0 auto;
+    color: white !important; }
+    .alumnos p span {
+      position: relative; }
+      .alumnos p span::after {
+        background-color: #cf5c36ec;
+        content: "";
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        z-index: -1; }
+  .alumnos .subb {
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    height: 80px; }
+    .alumnos .subb h3 {
+      color: white !important;
+      font-size: 60px;
+      text-shadow: #CF5C36 1px 1px 1px; }
+
+.preguntas {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  padding-bottom: 30px;
+  background: #377771;
+  background: linear-gradient(180deg, black 0%, #377771 95%); }
+  .preguntas h2 {
+    color: white !important;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, black, #CF5C36, black); }
+  .preguntas .fotos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    flex-wrap: wrap; }
+    .preguntas .fotos .foto {
+      width: 40vw; }
+      .preguntas .fotos .foto img {
+        width: 100%;
+        height: 100%; }
+
+/******************                   CONTACTO                   *******************/
+.sobrenos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #377771;
+  background: radial-gradient(rgba(0, 0, 0, 0.873) 0%, #377771 70%);
+  flex-wrap: wrap; }
+  .sobrenos .direccion {
+    text-align: center; }
+    .sobrenos .direccion .maps h2 {
+      font-size: 55px !important;
+      padding-bottom: 10px;
+      color: black !important;
+      text-shadow: 1px 1px 1px #CF5C36; }
+    .sobrenos .direccion .maps .mapa {
+      width: 600px;
+      height: 500px; }
+  .sobrenos .formulario {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .sobrenos .formulario h2 {
+      font-size: 50px !important;
+      padding-bottom: 10px;
+      color: black !important;
+      text-shadow: 1px 1px 1px #CF5C36; }
+    .sobrenos .formulario .questions {
+      flex-direction: column; }
+      .sobrenos .formulario .questions div {
+        padding-top: 15px; }
+        .sobrenos .formulario .questions div label {
+          color: #000 !important;
+          font-size: 27px; }
+
+/******************                Ingreso Plataforma                *******************/
+.singin {
+  background-image: url(../../images/nina-compu-biblioteca.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .singin .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.234);
+    /* Color de fondo translúcido */ }
+    .singin .container .login-form {
+      padding: 20px;
+      background-color: #ffffff95;
+      border-radius: 5px; }
+  .singin p {
+    color: white !important;
+    position: absolute;
+    top: 30px;
+    /* Ajusta la posición vertical */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Centra horizontalmente */
+    color: white;
+    font-size: 44px;
+    animation: warning 2s infinite;
+    /* Agrega una animación llamada "bounce" */ }
+
+@keyframes warning {
+  0% {
+    background-color: initial;
+    /* Estado inicial (sin cambio de color) */ }
+  50% {
+    background-color: red;
+    /* Cambia a rojo a la mitad de la animación */ }
+  100% {
+    background-color: initial;
+    /* Vuelve al estado inicial */ } }
+
+footer {
+  background-color: #377771; }
+  footer div {
+    text-align: center; }
+    footer div p {
+      font-size: 155%;
+      font-weight: 400;
+      font-style: italic;
+      padding-top: 5px;
+      width: 90vw;
+      margin: 0 auto;
+      padding-bottom: 35px; }
+  footer .logos {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 30px 25px; }
+
+@media (max-width: 900px) {
+  .imgRobotica div h5 {
+    font-size: 53px; }
+  .imgRobotica div p {
+    font-size: 22px; } }
+
+@media (max-width: 700px) {
+  .hero .conteiner h3 {
+    font-size: 48px; }
+  .hero .conteiner .conteiner-animation::after {
+    right: -30px !important; }
+  .imgRobotica div {
+    bottom: 10px !important;
+    padding: 10px; }
+    .imgRobotica div h5 {
+      font-size: 44px; }
+    .imgRobotica div p {
+      font-size: 19px; }
+  .preguntas .fotos {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .preguntas .fotos .foto {
+      height: 400px !important;
+      width: 85vw; }
+    .preguntas .fotos .fotito {
+      padding-top: 40px; }
+  .contenido .conocimientos .programa ul {
+    margin-top: 20px; } }
+
+@media (max-width: 600px) {
+  header nav div .logo {
+    font-size: 34px !important; }
+  .presentacion div h1 {
+    font-size: 40px; }
+  .hero .conteiner h3 {
+    font-size: 48px; }
+  .imgRobotica div h5 {
+    font-size: 39px; }
+  .imgRobotica div p {
+    font-size: 16px; } }
+
+@media (max-width: 500px) {
+  .imgRobotica div h5 {
+    font-size: 36px; }
+  .imgRobotica div p {
+    font-size: 14px; } }
+
+@media (max-width: 430px) {
+  header nav div .logo {
+    font-size: 30px !important; }
+  .hero .conteiner h3 {
+    font-size: 37px; }
+  .imgRobotica div {
+    bottom: 5px !important;
+    padding: 5px; }
+    .imgRobotica div h5 {
+      font-size: 32px; }
+    .imgRobotica div p {
+      font-size: 12px; } }
+
+@media (max-width: 380px) {
+  header nav div .logo {
+    font-size: 27px !important; }
+  .presentacion div h1 {
+    font-size: 35px; }
+  .presentacion div h3 {
+    font-size: 25px; }
+  .hero .conteiner h3 {
+    font-size: 33px; } }

@@ -1,0 +1,562 @@
+.presentacion{
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg, rgba(55,119,113,1) 0%, rgba(0, 0, 0, 0.697) 60%);
+    position: relative;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        h1{
+            font-size: 48px;
+            font-weight: 400;  
+        }
+        h3{
+            width: 90%;
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+            span{
+                top: 30px; /* Ajusta la posición vertical */
+                left: 50%; /* Centra horizontalmente */
+                transform: translateX(-50%); /* Centra horizontalmente */
+                animation: naranja 3.5s infinite; /* Agrega una animación llamada "bounce" */
+            }
+            @keyframes naranja {
+                0% {
+                    background-color: initial; /* Estado inicial (sin cambio de color) */
+                }
+                50% {
+                    background-color: #CF5C36; /* Cambia a rojo a la mitad de la animación */
+                }
+                100% {
+                    background-color: initial; /* Vuelve al estado inicial */
+                }
+            }
+        }
+    }
+
+    h4{
+        height: 100%;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding: 15px;
+        color: white !important;
+        text-shadow: #CF5C36 1px 1px 1px;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+    }
+}
+.hero{
+    background-color: #000;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    .conteiner{
+        width: 70%;
+        position: relative;
+        padding-bottom: 160px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            width: 100%;
+            color: white !important;
+            font-size: 60px;
+            width: 80vw !important;
+            .conteiner-animation{
+                background: #CF5C36;
+                position: relative;
+                &::after{
+                    content: "";
+                    border-left: 4px solid white;
+                    background: black;
+                    right: -38px;
+                    width: 80%;
+                    height: 105%;
+                    bottom: 0px;
+                    position: absolute;
+                    animation: maquinaescribir 2.5s infinite alternate steps(12);
+                }
+            }
+        }
+    }
+}
+
+@keyframes maquinaescribir{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 4.8%;
+    }
+}
+
+.formaciones{
+    z-index: -1;
+    position: relative;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg,rgba(0,0,0,1) 0%,  rgba(55,119,113,1) 95%, );
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding: 5px;
+        text-shadow: #CF5C36 1px 1px 1px;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        color: white !important;
+    }
+}
+
+.imgRobotica{
+    position: relative;
+    z-index: -1;
+    div{
+        position: absolute;
+        bottom: 20px;
+        text-align: center;  
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        h5{
+            text-align: center;
+            font-size: 60px;
+            color: white !important; 
+            margin: auto;
+            text-shadow: 5px 5px 4px black !important;
+            
+        }
+        p{
+            font-size: 26px;
+            text-align: center;
+            color: white !important;
+            text-shadow: 5px 5px 1px black !important;
+
+        }
+    }
+}
+
+.contenido{
+    z-index: -1;
+    position: relative;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #comienzo{
+        color: white !important;
+        padding-top: 45px;
+        font-size: 30px;
+        text-shadow: 1px 1px 1px #CF5C36;
+        width: 80%;
+        text-align: center !important;
+
+        span{
+            color: #CF5C36;
+            font-size: 35px;
+        }
+    }
+    .conocimientos{
+        padding-top: 90px;
+        text-align: center;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            width: 80vw;
+            font-size: 60px;
+            text-align: center;
+            color: white !important;
+            background: linear-gradient(90deg,black,#CF5C36,black);
+
+        }
+        .programa{
+            position: relative;
+            margin-top: 45px;
+            width: 80vw;
+
+            ul{
+                margin-top: 63px;
+                padding-left: 0rem !important;
+                h5{
+                    text-align: center;
+                    margin-top: 3px;
+                    color: white !important;
+                    text-shadow: 2px 2px 1px #CF5C36;
+                }
+                p{
+                    text-align: center;
+                    margin-top: 3px;
+                    color: white;
+                    
+                }
+            }
+        }
+    }
+}
+
+.edades{
+    height: auto;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        color: white !important;
+        font-size: 50px;
+        text-align: center;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        width: 80vw;
+    }
+    h3{
+        color: white !important;
+        text-align: center;
+        font-size: 34px;
+        padding-top: 40px;
+        text-shadow: 1px 1px 1px #CF5C36;
+        width: 80vw;
+        span{
+            color: #CF5C36;
+            font-size: 40px;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.619);
+
+        }
+    }
+    h4{
+        color: white !important;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 45px;
+        padding-bottom: 60px;
+        text-shadow: 1px 1px 1px #CF5C36;
+        width: 80vw;
+    }
+}
+
+.grupos{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        color: white !important;
+        font-size: 50px;
+        text-align: center;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        width: 80vw;
+
+    }
+    h4{
+        color: white !important;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 80vw;
+        span{
+            text-decoration: underline;
+            color: rgb(87, 206, 194);
+        }
+    }
+    h5{
+        color: white !important;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-shadow: 1px 1px 1px #CF5C36;
+        width: 80vw;
+    }
+}
+
+.costos{
+    text-align: center;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .precio{
+        h2{
+            color: white !important;
+            font-size: 50px;
+            text-align: center;
+            background: linear-gradient(90deg,black,#CF5C36,black);
+            width: 80vw;
+
+        }
+        h3{
+            color: white !important;
+            padding-top: 50px;
+            padding-bottom: 40px;
+            width: 80vw;
+            span{
+                font-size: 55px;
+                color: #CF5C36;
+            }
+        }
+        h4{
+            color: white !important;
+            padding-top: 20px;
+            width: 80vw;
+            span{
+                font-size: 30px;
+                color: #CF5C36;
+            }
+        }
+
+    }
+    h5{
+        color: white !important;
+        padding-top: 60px;
+        width: 80vw;
+        span{
+            font-size: 25px;
+            color: #CF5C36;
+        }
+    }
+    h6{
+        color: white !important;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        font-size: 30px;
+        width: 80vw;
+    }
+}
+
+.ubi{
+    margin: 0 auto;
+    text-align: center;
+    background: black;
+    width: 100vw;
+    h2{
+        color: white !important;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    iframe{
+        padding-bottom: 30px;
+    }
+}
+/******************                   Sobre Nosotros                   *******************/
+.mision{
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg, rgba(55,119,113,1) 0%, rgba(0,0,0,1) 100%);
+    .mis{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        h1{
+            font-size: 60px;
+            margin-bottom: 20px;
+            &:hover{
+                font-size: 90px
+                !important;
+            }
+        }
+        div{
+            width: 75%;
+            p{
+                font-size: 40px;
+                color: rgba(0, 0, 0, 0.876);
+                text-shadow: 0.5px 1px 1px rgba(255, 255, 255, 0.188);
+                font-weight: 500;
+                text-align: center;
+                font-style: italic;
+                span{
+                    position: relative;
+                    &::after{
+                        background-color: #cf5c36ec;
+                        content: "";
+                        width: 100%;
+                        height: 75%;
+                        position: absolute;
+                        bottom: 3px;
+                        left: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.alumnos{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 30px;
+    text-align: center;
+    p{
+        font-size: 50px;
+        text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.67);
+        width: 80vw;
+        margin: 0 auto;
+        color: white !important;
+        span{
+            position: relative;
+            &::after{
+                background-color: #cf5c36ec;
+                content: "";
+                width: 100%;
+                height: 75%;
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+    .subb{
+        width: 100%;
+        text-align: center;
+        margin-top:120px;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        height: 80px;
+        h3{
+            color: white !important;
+            font-size: 60px;
+            text-shadow: #CF5C36 1px 1px 1px;
+
+        }
+    }
+}
+.preguntas{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    padding-bottom: 30px;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg,rgba(0,0,0,1) 0%,  rgba(55,119,113,1) 95%, );
+    h2{
+        color: white !important;
+        font-size: 50px;
+        text-align: center;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+    }
+    .fotos{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+        flex-wrap: wrap;
+        .foto{
+            width: 40vw;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+}
+
+
+
+/******************                   CONTACTO                   *******************/
+
+.sobrenos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(55,119,113);
+    background: radial-gradient(rgba(0, 0, 0, 0.873) 0%, rgba(55,119,113,1) 70%);
+    flex-wrap: wrap;
+    .direccion{
+        text-align: center;
+        .maps{
+            h2{
+                font-size: 55px !important;
+                padding-bottom: 10px;
+                color: black !important;
+                text-shadow: 1px 1px 1px #CF5C36;
+            }
+            .mapa{
+                width: 600px;
+                height: 500px;
+            }
+        }
+    }
+    .formulario{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        h2{
+            font-size: 50px !important;
+            padding-bottom: 10px;
+            color: black !important;
+            text-shadow: 1px 1px 1px #CF5C36;
+        }
+        .questions{
+            @extend %flex;
+            flex-direction: column;
+            div{
+                padding-top: 15px;
+                label{
+                    color: #000 !important;
+                    font-size: 27px;
+                }
+            }
+    }
+}
+}
+
+/******************                Ingreso Plataforma                *******************/
+
+.singin{
+    background-image: url(../../images/nina-compu-biblioteca.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.234); /* Color de fondo translúcido */
+        .login-form {
+            padding: 20px;
+            background-color: #ffffff95;
+            border-radius: 5px;
+        }
+    }
+    p{
+        color: white !important;
+        position: absolute;
+        top: 30px; /* Ajusta la posición vertical */
+        left: 50%; /* Centra horizontalmente */
+        transform: translateX(-50%); /* Centra horizontalmente */
+        color: white;
+        font-size: 44px;
+        animation: warning 2s infinite; /* Agrega una animación llamada "bounce" */
+    }
+    @keyframes warning {
+        0% {
+            background-color: initial; /* Estado inicial (sin cambio de color) */
+        }
+        50% {
+            background-color: red; /* Cambia a rojo a la mitad de la animación */
+        }
+        100% {
+            background-color: initial; /* Vuelve al estado inicial */
+        }
+    }
+    
+}
+
