@@ -98,6 +98,12 @@
     }
 }
 
+@media (max-width: 520px){
+    #titulo5,#titulo4,#titulo3,#titulo2,#titulo1,#titulo0{
+        font-size: 40px;
+    }
+}
+
 @media (max-width: 500px){
     .imgRobotica{
         div{
@@ -145,6 +151,16 @@
             }
         }
     }
+    .preguntas{
+        .fotos{
+            .foto{
+                height: 30vh !important;
+            }
+        }
+    }
+    #titulo5,#titulo4,#titulo3,#titulo2,#titulo1,#titulo0{
+        font-size: 36px;
+    }
 }
 @media (max-width: 380px){
     header{
@@ -177,5 +193,8 @@
                 }
             }
         }
+    }
+    #titulo5,#titulo4,#titulo3,#titulo2,#titulo1,#titulo0{
+        font-size: 32px;
     }
 }

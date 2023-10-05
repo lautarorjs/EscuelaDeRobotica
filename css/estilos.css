@@ -558,6 +558,10 @@ footer {
   .imgRobotica div p {
     font-size: 16px; } }
 
+@media (max-width: 520px) {
+  #titulo5, #titulo4, #titulo3, #titulo2, #titulo1, #titulo0 {
+    font-size: 40px; } }
+
 @media (max-width: 500px) {
   .imgRobotica div h5 {
     font-size: 36px; }
@@ -577,7 +581,11 @@ footer {
     .imgRobotica div h5 {
       font-size: 32px; }
     .imgRobotica div p {
-      font-size: 12px; } }
+      font-size: 12px; }
+  .preguntas .fotos .foto {
+    height: 30vh !important; }
+  #titulo5, #titulo4, #titulo3, #titulo2, #titulo1, #titulo0 {
+    font-size: 36px; } }
 
 @media (max-width: 380px) {
   header nav div .logo {
@@ -589,4 +597,6 @@ footer {
   .hero .conteiner h3 {
     font-size: 33px; }
   .hero .conteiner .conteiner-animation::after {
-    right: -20px !important; } }
+    right: -20px !important; }
+  #titulo5, #titulo4, #titulo3, #titulo2, #titulo1, #titulo0 {
+    font-size: 32px; } }
