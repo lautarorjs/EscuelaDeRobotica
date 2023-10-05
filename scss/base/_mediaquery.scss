@@ -21,7 +21,7 @@
                 &::after{
                     right: -30px !important;
                 }
-        }
+            }
         }   
     }
     .imgRobotica{
@@ -126,6 +126,11 @@
             h3{
                 font-size: 37px;
             }
+            .conteiner-animation{
+                &::after{
+                    right: -23px !important;
+                }
+            }
         }
     }
     .imgRobotica{
@@ -165,6 +170,11 @@
         .conteiner{
             h3{
                 font-size: 33px;
+            }
+            .conteiner-animation{
+                &::after{
+                    right: -20px !important;
+                }
             }
         }
     }

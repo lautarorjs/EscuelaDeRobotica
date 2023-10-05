@@ -569,6 +569,8 @@ footer {
     font-size: 30px !important; }
   .hero .conteiner h3 {
     font-size: 37px; }
+  .hero .conteiner .conteiner-animation::after {
+    right: -23px !important; }
   .imgRobotica div {
     bottom: 5px !important;
     padding: 5px; }
@@ -585,4 +587,6 @@ footer {
   .presentacion div h3 {
     font-size: 25px; }
   .hero .conteiner h3 {
-    font-size: 33px; } }
+    font-size: 33px; }
+  .hero .conteiner .conteiner-animation::after {
+    right: -20px !important; } }
